@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit-brust</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d00e5524cf.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Lato', 'sans-serif';
+        }
+
+        #slide1 {
+            background-image: url(/images/banner1.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #slide2 {
+            background-image: url(/images/banner2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #slide3 {
+            background-image: url(/images/banner3.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #slide4 {
+            background-image: url(/images/banner4.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="mx-auto lg:px-20 mb-16">
+        <!-- nav -->
+        <div class="navbar md:bg-[#F85559] md:rounded-[600px] flex justify-between p-4 lg:px-12 md:py-5 my-5 ">
+
+            <!-- mobile extra nav-->
+            <div class="navbar-start w-auto order-2 md:hidden">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm  dropdown-content mt-3 z-[1] p-1 shadow bg-base-100 rounded-box w-auto right-0">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobile extra nav -->
+            <div class="hidden md:block text-lg font-normal text-[#FFF]">
+                <ul class="flex md:gap-6 lg:gap-8">
+                    <li><a>Home</a></li>
+                    <li><a>About us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center">
+                <p class="flex items-center text-[#121212] text-[20px] md:text-[#FFf] md:text-4xl font-bold"><img
+                        src="images/logo.png" alt="">Fruit Burst</p>
+            </div>
+            <div class="w-auto navbar-end hidden md:flex justify-between rounded-[50px] bg-[#FFF]">
+                <button class="btn rounded-[50px] bg-[#FFF] border-none">
+                    <input type="text" placeholder="Search here" class="border-white bg-transparent"><i
+                        class="fa-solid fa-magnifying-glass" style="color: #343537;"></i>
+                </button>
+            </div>
+        </div>
+        <!-- nav end -->
+        <!-- banner start -->
+        <div class="carousel w-full h-auto">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="text-center py-20 text-[#FFF] space-y-7 w-full h-full">
+                    <h2 class=" text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h2>
+                    <p class="text-xl">We supply highly quality organic products</p>
+                    <button class="px-5 py-4 bg-[#F85559] rounded-lg">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle bg-[black] text-[white]">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-[black] text-[white]">❯</a>
+                </div>
+            </div>
+            <!-- slide-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="text-center py-20 text-[#FFF] space-y-7 w-full h-full">
+                    <h2 class=" text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h2>
+                    <p class="text-xl">We supply highly quality organic products</p>
+                    <button class="px-5 py-4 bg-[#F85559] rounded-lg">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle bg-[black] text-[white]">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-[black] text-[white]">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="text-center py-20 text-[#FFF] space-y-7 w-full h-full">
+                    <h2 class=" text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h2>
+                    <p class="text-xl">We supply highly quality organic products</p>
+                    <button class="px-5 py-4 bg-[#F85559] rounded-lg">Shop Now</button>
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-[black] text-[white]">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-[black] text-[white]">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <div class="text-center py-20 text-[#FFF] space-y-7 w-full h-full">
+                    <h2 class=" text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h2>
+                    <p class="text-xl">We supply highly quality organic products</p>
+                    <button class="px-5 py-4 bg-[#F85559] rounded-lg">Shop Now</button>
+                </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-[black] text-[white]">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-[black] text-[white]">❯</a>
+              </div>
+            </div>
+        </div>
+        <!-- bonus -->
+
+        <!-- banner end -->
+    </header>
+    <main class="mx-auto lg:px-20">
+        <!-- deal of the day -->
+        <section>
+             <div class="deal-text flex md:justify-between">
+                <div class="text md:w-1/2 ">
+                    <h3 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h3>
+                    <p class="text-base text-[#12121299] ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+               <!-- countdown -->
+               <div class="grid grid-flow-col gap-3 text-center auto-cols-max items-center">
+                <div class="flex flex-col">
+                  <span class="countdown  text-5xl items-center gap-2">
+                    <span style="--value:29;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl" style="color: #100f0f;"></i>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown  text-5xl items-center gap-2">
+                    <span style="--value:15;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl" style="color: #100f0f;"></i>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown  text-5xl items-center gap-2">
+                    <span style="--value:25;"></span>
+                    <i class="fa-solid fa-ellipsis-vertical text-3xl" style="color: #100f0f;"></i>
+                  </span>
+                  min
+                </div>
+                <div class="flex flex-col">
+                  <span class="countdown text-5xl">
+                    <span style="--value:08;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+              <!-- count-end -->
+             </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
